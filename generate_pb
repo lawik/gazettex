@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd protobuf
+protoc --elixir_out=plugins=grpc:../lib/ --elixir_opt=package_prefix=gazettex protocol.proto
+
